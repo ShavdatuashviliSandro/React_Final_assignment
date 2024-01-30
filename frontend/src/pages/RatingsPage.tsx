@@ -1,5 +1,5 @@
 export default function RatingsPage() {
-  return (
-    <div>RatingsPage</div>
-  )
+    return (
+        <div>RatingsPage</div>
+    )
 }

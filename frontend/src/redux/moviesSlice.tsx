@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import {createSlice} from '@reduxjs/toolkit';
 
 interface MovieTypes {
     movies: any[],
@@ -26,11 +26,11 @@ const movieSlice = createSlice({
             state.favorites = state.favorites.filter((movie) => movie.id !== action.payload.id);
         },
         setRating: (state, action) => {
-            const { movieId, rating } = action.payload;
+            const {movieId, rating} = action.payload;
             state.ratings[movieId] = rating;
         },
     },
 });
 
-export const { setMovies, addToFavorites, removeFromFavorites, setRating } = movieSlice.actions;
+export const {setMovies, addToFavorites, removeFromFavorites, setRating} = movieSlice.actions;
 export default movieSlice.reducer;

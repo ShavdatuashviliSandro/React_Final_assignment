@@ -1,5 +1,5 @@
 export default function MovieDetailsPage() {
-  return (
-    <div>MovieDetailsPage</div>
-  )
+    return (
+        <div>MovieDetailsPage</div>
+    )
 }
